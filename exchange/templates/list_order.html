@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Order History</h1>
+
+<ul>
+    {% for order in object_list %}
+    <li class="orderer">{{ order.id }}</li>
+    {% endfor %}
+</ul>
+{% endblock content %}
